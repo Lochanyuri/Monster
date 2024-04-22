@@ -35,7 +35,7 @@ body{
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-size: 1em;
-  
+  user-select: none;
 }
 .box div:hover{
   background:#f0f0f086 ;
