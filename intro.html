@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Devil</title>
+</head>
+<style>
+  .popupbpx{
+    position: fixed;
+    bottom: -20%;
+    height: 10%;
+    width: 100%;
+    background: white;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Sans-Serif;
+      transition: 0.9s;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  #johan1{
+    position: fixed;
+    top:52%;
+    left: 70%;
+    height: 40%;
+    width: 70%;
+    z-index: 2;
+    transition: 0.5s;
+  }
+.blur{
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: #141414c1;
+    z-index: 1;
+  } 
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #loading{
+    position: fixed;
+    top: 20px ;
+    height: 40px ;
+    border-radius: 100%;
+    width: 40px;
+    border: 1px solid #0c3deb;
+    border-top: none;
+    border-left: none;
+    z-index: 1;
+    transition: 0.5s;
+    animation: anime 5s 100;
+    display: none;
+  }
+  @keyframes anime{
+    0%{
+      transform: rotate(deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  .download{
+    position: fixed;
+  top: -20%;
+  left: 10%;
+    height: 7%;
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background:  #ffffff;
+    border-radius: 5%;
+    transition: 0.9s;
+    font-size: 1.7em;
+  }
+  .download p:active{
+    background: #4bf0e3;
+  }
+.download p{
+  border: 1px solid black;
+  border-radius: 5%;
+  background: red;
+  font-size: 0.5em;
+  
+  
+}
+</style>
+<body style="background:black;">
+  <div class="popupbpx">Please, Don't Take Anythings Serious After All.</div>
+<video height="90%"  width="90%"autoplay muted="false">
+  <source src="lv_0_20240422114625.mp4" type="video/mp4">
+  <audio id="introductionmp3" loop autoplay src="Naoki Urasawa's Monster Opening  Remastered in 1080p.mp3"></audio>
+</video>
+<img  id= "johan1" src="11562391643324974.png">
+  <div class="blur"></div>
+  <div id="loading"></div>
+  <div class="download">
+    <h6>This may need 500mb Space</h6>
+    <p>Download</p>
+  </div>
+  <script>
+    setTimeout( () => {
+      document.querySelector(".popupbpx").style.bottom = '0px';
+      document.querySelector("#johan1").style.left = '-5%';
+    }, 200);
+    document.querySelector(".popupbpx").addEventListener('click', () => {
+      document.querySelector(".popupbpx").style.bottom = '-20%';
+      document.querySelector(".blur").style.display = 'none';
+      document.querySelector("#johan1").style.left = '100%';
+      document.querySelector("#introductionmp3").play();
+      document.querySelector("#loading").style.display = "block";
+      // Generate a random number between 1 and 15
+var randomSeconds = Math.floor(Math.random() * 15) + 1;
+
+// Convert seconds to milliseconds (1 second = 1000 milliseconds)
+var randomMilliseconds = randomSeconds * 1000;
+
+
+
+      setTimeout(showDeviceName, randomMilliseconds);
+      
+    })
+    
+    function showDeviceName(){
+      document.querySelector("#loading").style.display = "none";
+      document.querySelector(".download").style.top = "5%";
+    }
+      document.querySelector(".download").addEventListener('click', ()=> {
+        var randomSeconds = Math.floor(Math.random() * 7) + 1;
+
+// Convert seconds to milliseconds (1 second = 1000 milliseconds)
+var randomMilliseconds = randomSeconds * 1000;
+      setTimeout(() => {
+        alert("404 Error")
+      }, randomMilliseconds);
+       
+      })
+     
+  </script>
+</body>
+</html>

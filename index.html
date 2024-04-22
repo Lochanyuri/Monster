@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Devil</title>
+</head>
+<body>
+<img height="100%" width="100%" style="z-index:-1;"src="tumblr_mapxh55Xk81r1dti4o1_250.gif">
+<div class="box">
+  <div class="play"><a  href="intro.html">play</a></div>
+  <div class="music">music</div>
+  <div class="about">about</div>
+</div>
+  <audio loop id="introductionmp3" src="Naoki Urasawa's Monster Opening  Remastered in 1080p.mp3"></audio>
+
+  <script>
+    let play = document.querySelector(".play");
+let music = document.querySelector(".music");
+let about = document.querySelector('.about');
+about.addEventListener("click", myFunction);
+function myFunction(){
+  alert("This Story is to complex and difficult to understand.story Based on phychopath,muderer,monster. content May be senstive,voilance,harmful. Don't continue if you are too weak. we are not responsible for you if you get any diffculty.")
+}
+music.addEventListener('click', ()=> {
+  
+  document.getElementById("introductionmp3").play();
+})
+play.addEventListener('click', ()=> {
+  
+    document.getElementById("introductionmp3").play();
+})
+console.log(document.getElementById("introductionmp3"))
+    
+  </script>
+</body>
+</html>
