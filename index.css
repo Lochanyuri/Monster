@@ -24,14 +24,14 @@ body{
   gap: 3%;
 }
 .box div{
-  background: #929292;
+  background: white;
   color:black;
   height: 30%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;-moz-border-radius: 
+border-radius: 4%;
   font-family: Sans-Serif;
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -44,7 +44,6 @@ body{
 }
 img{
   position: fixed;
-  
   top: 0px;
   touch-action: none;
   z-index: -1;
@@ -57,4 +56,5 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
+  touch-action: none;
 }
