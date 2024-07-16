@@ -38,6 +38,10 @@ border-radius: 4%;
   font-size: 1em;
   user-select: none;
 }
+
+#monsterid{
+touch-action: none;
+}
 .box div:hover{
   background:#f0f0f086 ;
   border: 0.5px solid red;
