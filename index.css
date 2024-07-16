@@ -21,10 +21,10 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 3%;
+  gap: 4%;
 }
 .box div{
-  background: white;
+  background: #a7a7a7;
   color:black;
   height: 30%;
   width: 100%;
