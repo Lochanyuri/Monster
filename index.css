@@ -24,7 +24,8 @@ body{
   gap: 3%;
 }
 .box div{
-  background: black;
+  background: White;
+  color:black;
   height: 30%;
   width: 100%;
   display: flex;
@@ -43,7 +44,9 @@ body{
 }
 img{
   position: fixed;
+  
   top: 0px;
+  touch-action: none;
   z-index: -1;
 }
 a{
