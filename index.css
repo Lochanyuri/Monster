@@ -44,7 +44,7 @@ touch-action: none;
 }
 .box div:hover{
   background:#f0f0f086 ;
-  border: 0.5px solid red;
+  border: 0.5px solid #08d1cc;
 }
 img{
   position: fixed;
