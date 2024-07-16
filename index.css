@@ -49,7 +49,6 @@ touch-action: none;
 img{
   position: fixed;
   top: 0px;
-  display: none;
   z-index: -1;
 }
 a{
